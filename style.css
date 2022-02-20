@@ -1,0 +1,201 @@
+/**/
+
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+  }
+  html {
+    font-size: 16px;
+  }
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+    height: 100vh;
+  }
+  
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  /* Top of the header */
+/*This the beginning of the Navigation, coding list-style none removes bulllets but including bullets breaks nav items*/
+header {
+  height: 100px;
+  background-color: gray;
+}
+nav * {
+  float: left;
+  width: 20%;
+  display: block;
+}
+
+nav, ul, a {
+  width: 100%;
+  margin: 0 0;
+  padding: 5px 10%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+}
+
+/*End of Navigation*/
+
+/*Beginning of Top Section */
+.topSection {
+    height: 400px;
+    margin: 0 0;
+    padding-top: 5%;
+    clear: both;
+    text-align: center;
+    background-color: gray;
+    color: white;
+}
+
+.topSection > h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+p {
+  margin: 2% 5%;
+  padding: 0% 15%;
+}
+
+/*End of Top Section*/
+
+/*beginning of plain box section*/
+
+.plainbox {
+  height: 300px;
+  padding: 2% 2%;
+}
+
+.plainbox > h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 2.5rem;
+  text-transform: uppercase;
+}
+
+/*end of plain white box*/
+
+h3 {
+  margin: 8%;
+}
+
+.container {
+  height: 520px;
+  background-color: gray;
+}
+
+  section + section > section {
+      width: 50%;
+      float: left;
+  }
+
+  section > section {
+    text-align: center;
+    width: 50%;
+    margin-top: 6rem;
+    text-transform: uppercase;
+  }
+
+section > section p {
+  text-transform: none;
+  margin-bottom: 5%;
+}
+
+section > section h3 {
+  margin: 1rem 2rem;
+}
+
+article {
+    height: 100px;
+    width: 200px;
+    border: 5px lightblue solid;
+    background-color: lightblue;
+    margin: 0 20rem;
+}
+
+.giveback {
+  margin: 5% 0;
+  border: black 1px solid;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+
+/*This is the beginning of final section */
+
+.holdYourGround {
+  margin: 5% 0;
+}
+
+.holdYourGround > h1 {
+  margin-top: 4rem;
+  margin: 1.5rem 6%;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.holdYourGround, p {
+  text-transform: none;
+}
+
+.holdYourGround, .giveback {
+  text-align: center;
+}
+
+  footer {
+    background-color: black;
+    color: white;
+    padding: 1rem 1rem
+  }
+
+  /*this is the address in the footer*/
+  .socialMedia {
+    text-transform: uppercase;
+    padding: .3rem .8rem;
+    border: solid greenyellow 2px;
+  }
+
+  i {
+    padding: .3rem .8rem;
+  }
+  aside > span {
+    padding: .3rem .8rem;
+    text-transform: none;
+  }
+
+  .address {
+    border: 2px greenyellow solid;
+    padding: 1rem 1rem;
+    color: white;
+    background-color: black;
+  }
+.socialMedia + aside > .address {
+  float: left;
+}
+
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  
